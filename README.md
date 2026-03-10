@@ -157,7 +157,7 @@ All tables are indexed on common query fields. The database uses WAL mode for co
 
 ## Author
 
-**Patrik Fehrenbach** — [LinkedIn](https://www.linkedin.com/in/patrikfehrenbach/) · [X](https://x.com/itsecurityguard)
+**Patrik Grobshäuser** — [LinkedIn](https://www.linkedin.com/in/patrikfehrenbach/) · [X](https://x.com/itsecurityguard)
 
 ## License
 
