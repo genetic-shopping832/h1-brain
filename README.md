@@ -4,6 +4,44 @@ An MCP server that connects your AI assistant to HackerOne. It pulls your bug bo
 
 The primary tool, `hack(handle)`, generates a full hacking session briefing in a single call: fresh scope from the API, your past findings on that program, weakness patterns from your global track record, untouched assets, and suggested attack vectors — all formatted as actionable instructions for the AI.
 
+## How It Works
+
+For a full walkthrough, check out the three-part **[Bug Bounty Goldfish](https://clawd.it/series/bug-bounty-goldfish/)** series:
+
+1. **[Teaching Claude Everything You've Hacked](https://clawd.it/posts/11-teaching-claude-everything-youve-hacked/)** — Why I built h1-brain and how to set it up
+2. **[What h1-brain Actually Does](https://clawd.it/posts/12-what-h1-brain-actually-does/)** — Every tool explained, from search to the `hack()` briefing
+3. **[Running h1-brain Against a Real Target](https://clawd.it/posts/13-running-h1-brain-against-a-real-target/)** — A start-to-finish walkthrough on an actual program
+
+```mermaid
+graph LR
+    A["Claude Desktop / Code"] -->|MCP Protocol| B["h1-brain server"]
+    B -->|API calls| C["HackerOne API"]
+    B -->|reads / writes| D["SQLite DB"]
+    C -->|reports, programs, scopes| B
+    D -->|search, analyze, hack| A
+    style A fill:#ff5c5c,stroke:#ff5c5c,color:#fff
+    style B fill:#1a1d27,stroke:#ff5c5c,color:#fff
+    style C fill:#1a1d27,stroke:#555,color:#fff
+    style D fill:#1a1d27,stroke:#555,color:#fff
+```
+
+```mermaid
+flowchart TD
+    A["hack(handle)"] --> B["Fetch fresh scope from HackerOne API"]
+    B --> C["Pull your reports on this program from SQLite"]
+    C --> D["Analyze weakness patterns across ALL programs"]
+    D --> E["Identify untouched bounty-eligible assets"]
+    E --> F["Cross-reference: weaknesses that paid elsewhere but not here"]
+    F --> G["Generate structured briefing with agent instructions"]
+    style A fill:#ff5c5c,stroke:#ff5c5c,color:#fff
+    style G fill:#ff5c5c,stroke:#ff5c5c,color:#fff
+    style B fill:#1a1d27,stroke:#555,color:#fff
+    style C fill:#1a1d27,stroke:#555,color:#fff
+    style D fill:#1a1d27,stroke:#555,color:#fff
+    style E fill:#1a1d27,stroke:#555,color:#fff
+    style F fill:#1a1d27,stroke:#555,color:#fff
+```
+
 ## Requirements
 
 - Python 3.10+
