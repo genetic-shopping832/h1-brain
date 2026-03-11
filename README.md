@@ -6,6 +6,8 @@ It also ships with a **pre-built database of 3,600+ publicly disclosed bounty-aw
 
 The primary tool, `hack(handle)`, generates a full hacking session briefing in a single call: fresh scope from the API, your past findings, public disclosures for that program, weakness patterns, untouched assets, and suggested attack vectors — all formatted as actionable instructions that put the AI in offensive mode.
 
+![h1-brain demo](demo.gif)
+
 ## How It Works
 
 For a full walkthrough, check out the three-part **[Bug Bounty Goldfish](https://clawd.it/series/bug-bounty-goldfish/)** series:
